@@ -1,5 +1,5 @@
 import React from 'react';
-import myLogo from "../logo.png";
+import myLogo from "../logo2.png";
 //REACT FONTAWESOME IMPORTS
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,7 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light" >
+        <nav className="navbar navbar-expand-lg" >
             <div className = "container"> 
 
         <a className="navbar-brand" href="#"> <img className = "logo" src = {myLogo} alt = "Beyza Madenoglu"/></a>
@@ -26,7 +26,7 @@ export const Navbar = () => {
             </li>  
            
             <li className="nav-item">
-              <a className="nav-link" href="#">Contact me</a>
+              <a className="nav-link" href="#">Contacts</a>
             </li>
             
           </ul>
