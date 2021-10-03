@@ -9,7 +9,7 @@
 
 }
 body {
-  font-family: "Raleway";
+  font-family: "Raleway" !important;
 }
 
 nav {
@@ -88,7 +88,7 @@ nav ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Raleway";
+  
   text-align: center;
   
 }
@@ -150,4 +150,32 @@ nav ul li {
       font-size: 1.4rem;
   }
   
+}
+
+
+/***---- ABOUT ME ----***/
+.photo-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img{
+  width: 13rem;
+  border-radius: 50%;
+  padding:  .7rem;
+  background-color: var(--primary-orange);
+  transform: rotate(35deg);
+}
+
+.about-heading{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  
+}
+
+@media(max-width: 460px){
+  .profile-img{
+    width: 13rem;
+   
+  }
 }
