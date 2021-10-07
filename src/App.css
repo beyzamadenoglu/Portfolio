@@ -6,6 +6,7 @@
   --primary-white: #fff;
   --primary-dark: rgba(255,255,255,0);
   --primary-orange: #e49360bb;
+  --primary-light-gray:#f4f4f4;
 
 }
 body {
@@ -176,6 +177,74 @@ nav ul li {
 @media(max-width: 460px){
   .profile-img{
     width: 13rem;
+   
+  }
+}
+
+
+
+/***---- SERVICES ----***/
+.services{
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  align-items: center;
+  background-color: var(--primary-light-gray);
+  
+  
+}
+
+.services .circle{
+  margin: 0.375rem auto;
+  background-color: var(--primary-orange);
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+  position: relative;
+
+}
+
+.services .icon{
+  font-size: 1.4rem; 
+  color: var(--primary-white);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.services .box {
+  height: 14rem;
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background-color: var(--primary-white);
+  position: relative;
+  border-bottom: 0.345rem solid var(--primary-orange);
+}  
+
+.services .box:hover{
+  background: var(--primary-orange);
+  border-bottom: 0.3125rem solid var(--primary-dark);
+}
+
+.services .box:hover .icon{
+  color: black;
+
+}
+
+.services .box:hover .circle{
+  background-color: var(--primary-white);
+}
+
+.services .box:hover p{
+  color: var(--primary-white);
+
+}
+
+@media(max-width: 460px){
+  .services .box {
+  height: 17rem;
+  
    
   }
 }

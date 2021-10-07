@@ -4,6 +4,8 @@ import Navbar from './components/navbar';
 import Header from './components/header';
 import Particles from 'react-particles-js';
 import AboutMe from "./components/aboutme";
+import Info from "./components/info";
+
 
 
 function App() {
@@ -32,6 +34,7 @@ function App() {
       <Navbar/>
       <Header/>
       <AboutMe/>
+      <Info/>
   </>
   );
 }
